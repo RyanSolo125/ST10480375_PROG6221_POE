@@ -1,0 +1,26 @@
+# ST10480375_PROG6221_POE
+Cyber Crime Protection - ST10480375 PROG6221 POE
+
+Prompt Topics:
+ TypeText("You can ask about:");
+ TypeText("- phishing");
+ TypeText("- viruses / worms / macros");
+ TypeText("- malware / spyware / ransomware");
+ TypeText("- passwords");
+ TypeText("- safe browsing");
+ TypeText("- 2FA, firewall, antivirus");
+
+ 
+ASCII Art and Title:
+
+   ██████╗ ██████╗ ██████╗
+  ██╔════╝██╔════╝██╔══██╗
+  ██║     ██║     ██████╔╝
+  ██║     ██║     ██╔═══╝ 
+  ╚██████╗╚██████╗██║     
+   ╚═════╝ ╚═════╝╚═╝     
+
+   [ CYBER CRIME PROTECTION ]
+
+   >>> Secure Your Digital Life <<<
+   
