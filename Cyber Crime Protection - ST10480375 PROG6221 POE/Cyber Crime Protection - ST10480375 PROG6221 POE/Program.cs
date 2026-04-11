@@ -45,6 +45,8 @@ class Program
                 continue;
             }
 
+            // exit program
+
             if (input == "exit")
             {
                 TypeText("Goodbye! Stay safe online.");
@@ -112,7 +114,7 @@ class Program
 
         else if (input.Contains("how are you"))
         {
-            TypeText("I'm working perfectly and ready to help!");
+            TypeText("I'm working perfectly and ready to help you understand the dangers of cyber crime!");
         }
 
         else if (input.Contains("purpose"))
@@ -122,30 +124,30 @@ class Program
 
         else if (input.Contains("password"))
         {
-            TypeText("Use strong passwords with letters, numbers, and symbols.");
-            TypeText("Never share your password with anyone.");
+            TypeText("Use strong passwords with letters, numbers, and symbols to ensure that your password cannot be guesse.");
+            TypeText("Never share your password with anyone, even if you have known them for a long time.");
         }
 
         else if (input.Contains("phishing"))
         {
             TypeText("Phishing is when attackers trick you into giving personal information.");
-            TypeText("They use fake emails or websites that look real.");
+            TypeText("They use fake emails or websites that look real to fool you into entering your login details or personal information.");
         }
 
         else if (input.Contains("virus"))
         {
-            TypeText("A virus is a harmful program that spreads and damages files.");
+            TypeText("A virus is a harmful program that spreads through your device and corrupts files or restricts functions.");
         }
 
         else if (input.Contains("worm"))
         {
-            TypeText("A worm spreads automatically across networks without user action.");
+            TypeText("A worm is a type of malware that spreads automatically across networks without user action.");
         }
 
         else if (input.Contains("macro"))
         {
             TypeText("Macro viruses are hidden in documents like Word or Excel files.");
-            TypeText("They run when the file is opened.");
+            TypeText("They run when the file is opened and download other malware.");
         }
 
         else if (input.Contains("malware"))
@@ -155,22 +157,22 @@ class Program
 
         else if (input.Contains("spyware"))
         {
-            TypeText("Spyware secretly collects your personal information.");
+            TypeText("Spyware secretly collects your personal information. An example of a type of spyware is a key-logger.");
         }
 
         else if (input.Contains("ransomware"))
         {
-            TypeText("Ransomware locks your files and asks for money to unlock them.");
+            TypeText("Ransomware is a malware that locks your files and requires you to pay real money to an attacker to unlock them.");
         }
 
         else if (input.Contains("safe browsing"))
         {
-            TypeText("Only visit trusted websites and look for HTTPS.");
+            TypeText("Only visit trusted websites and look for HTTPS. Ensure that your connection to a website is secure and use a VPN if possible.");
         }
 
         else if (input.Contains("2fa") || input.Contains("two factor"))
         {
-            TypeText("Two-factor authentication adds extra security to your account.");
+            TypeText("Two-factor authentication adds extra security to your account by adding more steps to the login process.");
         }
 
         else if (input.Contains("firewall"))
@@ -180,7 +182,7 @@ class Program
 
         else if (input.Contains("antivirus"))
         {
-            TypeText("Antivirus software protects your computer from threats.");
+            TypeText("Antivirus software protects your device from threats.");
         }
 
         else
