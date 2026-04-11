@@ -23,4 +23,7 @@ ASCII Art and Title:
    [ CYBER CRIME PROTECTION ]
 
    >>> Secure Your Digital Life <<<
-   
+
+
+   Added audio greeting:
+    "Hello, I am the Cyber Crime Protection Chat Bot, here to help you secure your digital life."
