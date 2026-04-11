@@ -9,15 +9,17 @@ class Program
         Console.Title = "CCP Cyber Crime Protection";
 
         // calling audio and art methods
-
         PlayVoice();
-
         ShowAscii();
 
+
+        // headding
         Console.WriteLine("========================================");
         Console.WriteLine(" Welcome to CCP Cyber Crime Protection ");
         Console.WriteLine("========================================\n");
 
+
+        // enter name
         Console.Write("Enter your name: ");
         string name = Console.ReadLine();
 
@@ -37,16 +39,15 @@ class Program
 
             string input = Console.ReadLine().ToLower();
 
-            // output for unknown inputs
-
+            // output for unknown input 
             if (string.IsNullOrWhiteSpace(input))
             {
                 TypeText("I didn't quite understand that. Could you rephrase?");
                 continue;
             }
 
-            // exit program
 
+            // exit program
             if (input == "exit")
             {
                 TypeText("Goodbye! Stay safe online.");
@@ -57,13 +58,13 @@ class Program
         }
     }
 
-    // voice method
 
+    // voice method
     static void PlayVoice()
     {
         try
         {
-            SoundPlayer player = new SoundPlayer("welcome.wav.wav");
+            SoundPlayer player = new SoundPlayer("welcome.wav");
             player.PlaySync();
         }
         catch
@@ -73,7 +74,6 @@ class Program
     }
 
     // art
-
     static void ShowAscii()
     {
         Console.ForegroundColor = ConsoleColor.Cyan;
@@ -97,8 +97,8 @@ class Program
     static void Respond(string input)
     {
 
-        //input prompts
 
+        //input prompts
         if (input.Contains("help"))
         {
             TypeText("You can ask about:");
@@ -110,8 +110,8 @@ class Program
             TypeText("- 2FA, firewall, antivirus");
         }
 
-        // answers
 
+        // answers
         else if (input.Contains("how are you"))
         {
             TypeText("I'm working perfectly and ready to help you understand the dangers of cyber crime!");
@@ -191,8 +191,8 @@ class Program
         }
     }
 
-    // sleep(20) to make the text appear like the chatbot is actually talking
 
+    // sleep(20) to make the text appear like the chatbot is actually talking
     static void TypeText(string message)
     {
         foreach (char c in message)
