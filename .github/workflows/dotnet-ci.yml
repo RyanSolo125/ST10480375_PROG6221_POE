@@ -3,24 +3,24 @@ name: .NET CI
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+    defaults:
+      run:
+        working-directory: "Cyber Crime Protection - ST10480375 PROG6221 POE"
 
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v4
+    steps:
+    - uses: actions/checkout@v4
+
+    - uses: actions/setup-dotnet@v4
       with:
         dotnet-version: '8.0.x'
 
-    - name: Restore dependencies
+    - name: Restore
       run: dotnet restore
 
-    - name: Build project
+    - name: Build
       run: dotnet build --no-restore --configuration Release
